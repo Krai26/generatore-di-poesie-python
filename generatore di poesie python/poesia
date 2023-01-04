@@ -1,0 +1,19 @@
+
+import random
+
+# List of nouns
+nouns = ["casa", "albero", "uomo", "donna", "bambino", "animale", "fiore", "cielo", "acqua", "terra"]
+
+# List of verbs
+verbs = ["corre", "canta", "balla", "piange", "ride", "ama", "odia", "vive", "muore", "sogna"]
+
+# List of adjectives
+adjectives = ["bello", "triste", "allegro", "arrabbiato", "timido", "felice", "caldo", "freddo", "grande", "piccolo"]
+
+# Function to generate a random line of the poem
+def generate_line():
+  return random.choice(adjectives) + " " + random.choice(nouns) + " " + random.choice(verbs) + "."
+
+# Generate 3 lines
+for i in range(3):
+  print(generate_line())
